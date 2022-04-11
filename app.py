@@ -2,8 +2,10 @@
 
 from flask import Flask, render_template
 
+import first
+
 app = Flask(__name__)
-app.register_blueprint()
+app.register_blueprint(first.blue_first)
 
 
 # @app.route('/')
